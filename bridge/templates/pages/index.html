@@ -48,7 +48,7 @@
                         <a class="nav-link page-scroll" href="#blog">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll d-flex flex-row align-items-center text-primary" href="#">
+                        <a class="nav-link page-scroll d-flex flex-row align-items-center text-primary" href="{{ url_for('auth.login') }}">
                             <em data-feather="layout" width="18" height="18" class="mr-2"></em>
                             Try Generator
                         </a>
@@ -67,8 +67,8 @@
                 <h1 class="heading-black text-capitalize">Quickly build landing pages with Knight</h1>
                 <p class="lead py-3">Knight is a platform that helps freelancers and companies build beautiful landing
                     pages in minutes. Sign up for free.</p>
-                <button class="btn btn-primary d-inline-flex flex-row align-items-center">
-                    Get started now
+                <button class="btn btn-primary d-inline-flex flex-row align-items-center" >
+                    <a href="{{ url_for('auth.login') }}">Get started now</a>
                     <em class="ml-2" data-feather="arrow-right"></em>
                 </button>
             </div>
